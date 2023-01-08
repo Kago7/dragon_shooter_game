@@ -1,0 +1,12 @@
+try catch surround collision catch exception indexoutofbounds checking for fireballs and monsters
+
+commented notes:
+
+// this try catch catches all array
+					 * index exceptions wehn checking for // collisions. This is because the arrays
+					 * are accessed in different threads and // are not sychronized. Thus, we get
+					 * errors, especially when both arrays are // accessed in quick succession like
+					 * when the fireball is shot rigth with a // monster in front of it-this is a
+					 * race condition. We haven't learned how to // make synced collections so I'm
+					 * just gonna catch all the exception to reduce // console error clutter-for
+					 * asthetic. 
